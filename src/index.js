@@ -3,8 +3,7 @@ require("express-async-errors");
 require("dotenv").config();
 const cors = require("cors");
 const routes = require("./routes");
-const host = "http://localhost:";
-const port = process.env.NODE_DOCKER_PORT || 3000;
+const port = process.env.PORT || 3000;
 
 const app = express();
 
@@ -17,6 +16,4 @@ app.use((error, _request, response, _next) => {
   response.status(500).send(error);
 });
 
-app.listen(port, () => {
-  console.log(`Server started at: ${host}${port}`);
-});
+app.listen(port);

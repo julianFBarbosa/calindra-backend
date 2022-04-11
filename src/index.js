@@ -1,9 +1,10 @@
 const express = require("express");
 require("express-async-errors");
+require("dotenv").config();
 const cors = require("cors");
 const routes = require("./routes");
 const host = "http://localhost:";
-const port = 3001;
+const port = process.env.NODE_DOCKER_PORT;
 
 const app = express();
 

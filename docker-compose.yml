@@ -6,30 +6,8 @@ services:
     ports:
       - $NODE_LOCAL_PORT:$NODE_DOCKER_PORT
     volumes:
-      - ./backend/:/backend
+      - ./:/backend
       - backend_deps:/backend/node_modules
-    networks:
-      - backend
-      - frontend
-
-  frontend:
-    depends_on:
-      - backend
-    build:
-      context: ./frontend
-      args:
-        - REACT_APP_API_BASE_URL=$CLIENT_API_BASE_URL
-    volumes:
-      - ./frontend:/frontend
-      - frontend_deps:/backend/node_modules
-    ports:
-      - 3000:3000
-    networks:
-      - frontend
 
 volumes:
-  frontend_deps: {}
   backend_deps: {}
-networks:
-  backend:
-  frontend:

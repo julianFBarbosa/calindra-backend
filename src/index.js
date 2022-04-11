@@ -4,7 +4,7 @@ require("dotenv").config();
 const cors = require("cors");
 const routes = require("./routes");
 const host = "http://localhost:";
-const port = process.env.NODE_DOCKER_PORT;
+const port = process.env.NODE_DOCKER_PORT || 3000;
 
 const app = express();
 

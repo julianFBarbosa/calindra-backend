@@ -17,6 +17,24 @@ it's simply! go to [https://developers.google.com/maps/documentation/geocoding/s
 
 _warning: you must have a developer account at google and have created a project to activate it properly_
 
+## Usage
+
+Go to [localhost](http://localhost/3000) or [https://calindra-backend.herokuapp.com/](https://calindra-backend.herokuapp.com/) to access the API
+
+see the url structure below:
+
+_https://calindra-backend.herokuapp.com/_ => host
+
+_/v1/locations/[location_list]_ => path + Addresses
+
+note: Addresses list are separated by a semicolon, e.g: https://calindra-backend.herokuapp.com/v1/locations/Manhattan;S%C3%A3o%20Paulo;Chicago
+
+_(-d is optional, if you want to run it detached from your terminal instance)_
+
+It will create the container applications, install dependencies and run your dockerized application.
+
+After the installation, the frontend application will be avaliable at [http://localhost:3001](http://localhost:3001).
+
 ## Available Scripts
 
 In the project directory, you can run:

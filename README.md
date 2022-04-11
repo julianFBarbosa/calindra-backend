@@ -29,12 +29,6 @@ _/v1/locations/[location_list]_ => path + Addresses
 
 note: Addresses list are separated by a semicolon, e.g: https://calindra-backend.herokuapp.com/v1/locations/Manhattan;S%C3%A3o%20Paulo;Chicago
 
-_(-d is optional, if you want to run it detached from your terminal instance)_
-
-It will create the container applications, install dependencies and run your dockerized application.
-
-After the installation, the frontend application will be avaliable at [http://localhost:3001](http://localhost:3001).
-
 ## Available Scripts
 
 In the project directory, you can run:
@@ -45,4 +39,4 @@ _(-d is optional, if you want to run it detached from your terminal instance)_
 
 It will create the container applications, install dependencies and run your dockerized application.
 
-After the installation, the frontend application will be avaliable at [http://localhost:3001](http://localhost:3001).
+After the installation, the application will be avaliable at [http://localhost:3001](http://localhost:3001).

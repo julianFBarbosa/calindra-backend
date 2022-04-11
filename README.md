@@ -31,7 +31,7 @@ note: Addresses list are separated by a semicolon, e.g: https://calindra-backend
 
 ## Available Scripts
 
-In the project directory, you can run:
+at the project root directory, you can run:
 
 `docker-compose up (-d)`
 

@@ -15,7 +15,7 @@ after that, run: `cp .env.example .env` or similar to generate a valid `.env` fi
 
 it's simply! go to [https://developers.google.com/maps/documentation/geocoding/start](https://developers.google.com/maps/documentation/geocoding/start) and follow the instructions, after this, you need to activate the Geocoding and Geolocalization APIs at [https://console.cloud.google.com/marketplace/product/google/geocoding-backend.googleapis.com](https://console.cloud.google.com/marketplace/product/google/geocoding-backend.googleapis.com) and [https://console.cloud.google.com/apis/library/geolocation.googleapis.com](https://console.cloud.google.com/apis/library/geolocation.googleapis.com)
 
-_warning: you must have a developer account at google and have created a project to activate it properly_
+_warning: you must have a developer account at google and have created a project to activate it properly if you want to run it locally_
 
 ## Usage
 

@@ -12,9 +12,6 @@ module.exports = function (y1, x1, y2, x2) {
   const newDeltaY = deltaY * LATITUDE_IN_KM;
   const newDeltaX = deltaX * LONGITUDE_IN_KM;
 
-  console.log("newDeltaX", newDeltaX);
-  console.log("newDeltaY", newDeltaY);
-
   const result = Math.sqrt(Math.pow(newDeltaX, 2) + Math.pow(newDeltaY, 2));
 
   return result;
